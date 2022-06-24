@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'NikeFont';
+  src: url("../Nike-Font/Futura Condensed Extra Bold.otf"); }
+
+body {
+  font-family: 'Roboto'; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; } }
+
+.menu-jordan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 4px 10px; }
+  .menu-jordan ul {
+    list-style: none;
+    display: flex;
+    margin: 0; }
+    .menu-jordan ul li {
+      padding: 0 20px; }
+      .menu-jordan ul li:nth-child(2) {
+        padding: 0; }
+      .menu-jordan ul li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 12px; }
+        .menu-jordan ul li a:hover {
+          color: #2a2a2a; }
+
+.menu-nike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px; }
+  @media screen and (max-width: 768px) {
+    .menu-nike {
+      justify-content: flex-end; } }
+  .menu-nike .menuDesplegableBurger {
+    margin-right: 10px;
+    padding: 0; }
+    .menu-nike .menuDesplegableBurger i {
+      font-size: 1.5rem;
+      color: #111;
+      cursor: pointer; }
+  .menu-nike .bodyMenu {
+    padding: 0; }
+    .menu-nike .bodyMenu .menuDesplegable {
+      padding: 0;
+      margin-top: 10px; }
+      .menu-nike .bodyMenu .menuDesplegable li {
+        padding: 10px 0;
+        margin-bottom: 0; }
+  .menu-nike .logo-container {
+    position: absolute;
+    left: 10px; }
+  .menu-nike ul {
+    list-style: none;
+    display: flex;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      .menu-nike ul {
+        flex-direction: column;
+        justify-content: center; } }
+    .menu-nike ul li {
+      margin-right: 10px; }
+      @media screen and (max-width: 768px) {
+        .menu-nike ul li {
+          margin-right: 0;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #111; } }
+      .menu-nike ul li a {
+        text-decoration: none;
+        color: #111;
+        padding: 16px 12px 18px 12px; }
+        .menu-nike ul li a:hover {
+          border-bottom: 2px solid #111; }
+
+.banner .banner-container .banner-img {
+  text-align: center; }
+  .banner .banner-container .banner-img img {
+    width: 100%;
+    margin-bottom: 30px; }
+
+.segundo-banner .banner-container {
+  text-align: center; }
+  .segundo-banner .banner-container img {
+    width: 100%;
+    margin-bottom: 30px; }
+
+.no-paramos {
+  text-align: center;
+  margin: 30px 0; }
+  .no-paramos h4 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-family: 'NikeFont';
+    color: #000; }
+  .no-paramos div a {
+    background-color: #111;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 6px 20px;
+    margin: 6px 6px 0 0;
+    border-radius: 20px; }
+    .no-paramos div a:hover {
+      opacity: 0.5; }
+
+.colecciones {
+  margin: 30px 0; }
+  .colecciones h5 {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .colecciones .colecciones-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 768px) {
+      .colecciones .colecciones-container {
+        flex-direction: column;
+        justify-content: center; } }
+    .colecciones .colecciones-container .nike-card {
+      margin: 10px 0 0 0;
+      max-width: 700px;
+      width: 50%;
+      padding: 10px; }
+      @media screen and (max-width: 768px) {
+        .colecciones .colecciones-container .nike-card {
+          width: 100%;
+          margin: 10px 0 0 0; } }
+      .colecciones .colecciones-container .nike-card img {
+        margin-bottom: 30px;
+        width: 100%; }
+      .colecciones .colecciones-container .nike-card h6 {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 10px; }
+      .colecciones .colecciones-container .nike-card h4 {
+        font-family: 'NikeFont';
+        font-size: 3rem;
+        font-weight: 900;
+        color: #000; }
+      .colecciones .colecciones-container .nike-card .btn-container {
+        margin-top: 24px; }
+        .colecciones .colecciones-container .nike-card .btn-container a {
+          background-color: #111;
+          text-decoration: none;
+          color: #fff;
+          font-size: 0.8rem;
+          font-weight: 300;
+          cursor: pointer;
+          padding: 6px 20px;
+          margin: 6px 6px 0 0;
+          border-radius: 20px; }
+          .colecciones .colecciones-container .nike-card .btn-container a:hover {
+            opacity: 0.5; }
+
+.tercer-banner {
+  text-align: center; }
+  .tercer-banner h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .tercer-banner img {
+    width: 100%;
+    margin-bottom: 30px; }
+  .tercer-banner .sneakers h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .tercer-banner .sneakers h3 {
+    font-family: 'NikeFont';
+    color: #000;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 30px; }
+  .tercer-banner .sneakers a {
+    background-color: #111;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin: 6px 6px 0 0;
+    border-radius: 20px; }
+    .tercer-banner .sneakers a:hover {
+      opacity: 0.5; }
+
+footer {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      justify-content: center; } }
+  footer .web-map {
+    display: flex; }
+    footer .web-map ul {
+      list-style: none;
+      margin: 40px;
+      padding-left: 0; }
+      @media screen and (max-width: 768px) {
+        footer .web-map ul {
+          width: 50%; } }
+      footer .web-map ul li {
+        margin-bottom: 8px;
+        cursor: pointer; }
+      footer .web-map ul .big-link {
+        font-size: 0.8rem;
+        font-weight: 700; }
+      footer .web-map ul .small-link {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #7e7e7e; }
+        footer .web-map ul .small-link:hover {
+          color: #fff; }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 40px; }
+    footer .social-icons ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; }
+      footer .social-icons ul li {
+        margin-right: 20px; }
+        footer .social-icons ul li svg {
+          cursor: pointer; }
+          footer .social-icons ul li svg:hover {
+            fill: #fff; }

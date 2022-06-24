@@ -1,0 +1,44 @@
+.tercer-banner {
+    text-align: center;
+    h5 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sneakers {
+        h6 {
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-family: 'NikeFont';
+            color: #000;
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+        }
+
+        a {
+            background-color: $color-principal;
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            padding: 8px 20px;
+            margin: 6px 6px 0 0;
+            border-radius: 20px;
+                &:hover {
+                    opacity: 0.5;
+                }
+        }
+    }
+}
