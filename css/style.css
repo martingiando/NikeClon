@@ -107,10 +107,10 @@ body {
     background-color: #111;
     text-decoration: none;
     color: #fff;
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     cursor: pointer;
-    padding: 6px 20px;
+    padding: 8px 20px;
     margin: 6px 6px 0 0;
     border-radius: 20px; }
     .no-paramos div a:hover {
@@ -156,10 +156,10 @@ body {
           background-color: #111;
           text-decoration: none;
           color: #fff;
-          font-size: 0.8rem;
-          font-weight: 300;
+          font-size: 1rem;
+          font-weight: 400;
           cursor: pointer;
-          padding: 6px 20px;
+          padding: 8px 20px;
           margin: 6px 6px 0 0;
           border-radius: 20px; }
           .colecciones .colecciones-container .nike-card .btn-container a:hover {
