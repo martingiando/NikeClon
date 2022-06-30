@@ -1,10 +1,9 @@
 @import '../base/base';
+@import '../base/mixins';
 
 .menu-jordan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eee;
+    @include flexbox(center, space-between);
+    background-color: $color-blanco-secundario;
     padding: 4px 10px;
     ul {
         list-style: none;
@@ -28,9 +27,7 @@
 }
 
 .menu-nike {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(center, center);
     height: 70px;
 
     @media screen and (max-width: 768px) {
@@ -42,7 +39,7 @@
         padding: 0;
         i {
             font-size: 1.5rem;
-            color: $color-principal;
+            color: map-get($mapaDeColores, $color-principal);
             cursor: pointer;
         }
     }

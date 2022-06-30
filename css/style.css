@@ -36,8 +36,8 @@ body {
 
 .menu-nike {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 70px; }
   @media screen and (max-width: 768px) {
     .menu-nike {
@@ -88,11 +88,9 @@ body {
     width: 100%;
     margin-bottom: 30px; }
 
-.segundo-banner .banner-container {
-  text-align: center; }
-  .segundo-banner .banner-container img {
-    width: 100%;
-    margin-bottom: 30px; }
+.segundo-banner .banner-container img {
+  width: 100%;
+  margin-bottom: 30px; }
 
 .no-paramos {
   text-align: center;
@@ -102,7 +100,7 @@ body {
     font-weight: 900;
     margin-bottom: 8px;
     font-family: 'NikeFont';
-    color: #000; }
+    color: #111; }
   .no-paramos div a {
     background-color: #111;
     text-decoration: none;
