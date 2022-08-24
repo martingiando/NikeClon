@@ -1,53 +1,53 @@
 .colecciones {
-    margin: 30px 0;
-    h5 {
-        font-size: 1.5rem;
+  margin: 30px 0;
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .colecciones-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .nike-card {
+      margin: 10px 0 0 0;
+      max-width: 700px;
+      width: 50%;
+      padding: 10px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 10px 0 0 0;
+      }
+      img {
+        margin-bottom: 30px;
+        width: 100%;
+      }
+
+      h6 {
+        font-size: 0.8rem;
         font-weight: 400;
-    }
-    .colecciones-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
 
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            justify-content: center;
+      h4 {
+        font-family: "NikeFont";
+        font-size: 3rem;
+        font-weight: 900;
+        color: #000;
+      }
+
+      .btn-container {
+        margin-top: 24px;
+        a {
+          @include botones;
         }
-
-        .nike-card {
-            margin: 10px 0 0 0;
-            max-width: 700px;
-            width: 50%;
-            padding: 10px;
-
-            @media screen and (max-width: 768px) {
-                width: 100%;
-                margin: 10px 0 0 0;
-            }
-            img {
-                margin-bottom: 30px;
-                width: 100%;
-            }
-
-            h6 {
-                font-size: 0.8rem;
-                font-weight: 400;
-                margin-bottom: 10px;
-            }
-
-            h4 {
-                font-family: 'NikeFont';
-                font-size: 3rem;
-                font-weight: 900;
-                color: #000;
-            }
-
-            .btn-container {
-                margin-top: 24px;
-                a {
-                    @include botones;
-                }
-            }
-        }
+      }
     }
+  }
 }

@@ -1,6 +1,13 @@
-* {
-  margin: 0;
-  padding: 0; }
+@font-face {
+  font-family: 'NikeFont';
+  src: url("../Nike-Font/Futura Condensed Extra Bold.otf"); }
+
+body {
+  font-family: 'Roboto'; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; } }
 
 @font-face {
   font-family: 'NikeFont';
@@ -92,6 +99,17 @@ body {
   width: 100%;
   margin-bottom: 30px; }
 
+@font-face {
+  font-family: 'NikeFont';
+  src: url("../Nike-Font/Futura Condensed Extra Bold.otf"); }
+
+body {
+  font-family: 'Roboto'; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0; } }
+
 .no-paramos {
   text-align: center;
   margin: 30px 0; }
@@ -99,7 +117,7 @@ body {
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 8px;
-    font-family: 'NikeFont';
+    font-family: "NikeFont";
     color: #111; }
   .no-paramos div a {
     background-color: #111;
@@ -144,7 +162,7 @@ body {
         font-weight: 400;
         margin-bottom: 10px; }
       .colecciones .colecciones-container .nike-card h4 {
-        font-family: 'NikeFont';
+        font-family: "NikeFont";
         font-size: 3rem;
         font-weight: 900;
         color: #000; }
@@ -177,7 +195,7 @@ body {
     font-weight: 400;
     margin-bottom: 15px; }
   .tercer-banner .sneakers h3 {
-    font-family: 'NikeFont';
+    font-family: "NikeFont";
     color: #000;
     font-size: 4rem;
     font-weight: 900;

@@ -8,4 +8,19 @@ $mapaDeColores: (
     $color-blanco: #fff,
     $color-blanco-secundario: #eee,
     $footer-links: #7e7e7e,
-)
+);
+
+@font-face {
+    font-family: 'NikeFont';
+    src: url('../Nike-Font/Futura\ Condensed\ Extra\ Bold.otf');
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+}

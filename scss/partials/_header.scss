@@ -1,91 +1,91 @@
-@import '../base/base';
-@import '../base/mixins';
+@import "../base/base";
+@import "../base/mixins";
 
 .menu-jordan {
-    @include flexbox(center, space-between);
-    background-color: $color-blanco-secundario;
-    padding: 4px 10px;
-    ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        li {
-            padding: 0 20px;
-            &:nth-child(2) {
-                padding: 0;
-            }
-            a {
-                text-decoration: none;
-                color: $color-principal;
-                font-size: 12px;
-                &:hover {
-                    color: rgb(42, 42, 42);
-                }
-            }
+  @include flexbox(center, space-between);
+  background-color: $color-blanco-secundario;
+  padding: 4px 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    li {
+      padding: 0 20px;
+      &:nth-child(2) {
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $color-principal;
+        font-size: 12px;
+        &:hover {
+          color: rgb(42, 42, 42);
         }
+      }
     }
+  }
 }
 
 .menu-nike {
-    @include flexbox(center, center);
-    height: 70px;
+  @include flexbox(center, center);
+  height: 70px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+  }
+
+  .menuDesplegableBurger {
+    margin-right: 10px;
+    padding: 0;
+    i {
+      font-size: 1.5rem;
+      color: map-get($mapaDeColores, $color-principal);
+      cursor: pointer;
+    }
+  }
+
+  .bodyMenu {
+    padding: 0;
+    .menuDesplegable {
+      padding: 0;
+      margin-top: 10px;
+      li {
+        padding: 10px 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 10px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
-        justify-content: flex-end;
-    } 
-
-    .menuDesplegableBurger {
-        margin-right: 10px;
-        padding: 0;
-        i {
-            font-size: 1.5rem;
-            color: map-get($mapaDeColores, $color-principal);
-            cursor: pointer;
-        }
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .bodyMenu {
-        padding: 0;
-        .menuDesplegable {
-            padding: 0;
-            margin-top: 10px;
-            li {
-                padding: 10px 0;
-                margin-bottom: 0;
-            }
+    li {
+      margin-right: 10px;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $color-principal;
+      }
+      a {
+        text-decoration: none;
+        color: $color-principal;
+        padding: 16px 12px 18px 12px;
+        &:hover {
+          border-bottom: 2px solid $color-principal;
         }
+      }
     }
-
-    .logo-container {
-        position: absolute;
-        left: 10px;
-    }
-    ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        li {
-            margin-right: 10px;
-
-            @media screen and (max-width: 768px) {
-                margin-right: 0;
-                margin-bottom: 10px;
-                border-bottom: 1px solid $color-principal;
-            }
-            a {
-                text-decoration: none;
-                color: $color-principal;
-                padding: 16px 12px 18px 12px;
-                &:hover {
-                    border-bottom: 2px solid $color-principal;
-                }
-            }
-        }
-    }
+  }
 }
